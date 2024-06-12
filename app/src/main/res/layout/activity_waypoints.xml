@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".waypoints">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
+        >
+
+        <ImageView
+            android:id="@+id/icon_back_waypoint"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/iconback"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Button
+            android:id="@+id/btn_back_waypoint"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_back_waypoint"
+            app:layout_constraintTop_toTopOf="@+id/icon_back_waypoint"
+            app:layout_constraintStart_toStartOf="@id/icon_back_waypoint"
+            app:layout_constraintEnd_toEndOf="@id/icon_back_waypoint"
+            />
+
+        <TextView
+            android:id="@+id/waypoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="WayPoints"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/icon_back_waypoint"
+            app:layout_constraintStart_toEndOf="@+id/icon_back_waypoint"
+            app:layout_constraintTop_toTopOf="@id/icon_back_waypoint"
+            />
+
+        <TextView
+            android:id="@+id/text_sapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Hasil daur ulang yang sudah kamu lakukan"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="@id/icon_back_waypoint"
+            app:layout_constraintTop_toBottomOf="@id/waypoint"
+            />
+
+        <LinearLayout
+            android:id="@+id/widget_rekap"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/text_sapa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <ImageButton
+                android:id="@+id/widget_poin"
+                android:layout_width="93dp"
+                android:layout_height="85dp"
+                app:srcCompat="@drawable/poin_widgeta"
+                android:contentDescription="Akumulasi Poin"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                />
+            <ImageButton
+                android:id="@+id/widget_sampahor"
+                android:layout_width="93dp"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/sampah_organik_widget"
+                android:contentDescription="Akumulasi Poin"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                />
+            <ImageButton
+                android:id="@+id/widget_botolplastik"
+                android:layout_width="93dp"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/botol_widget"
+                android:contentDescription="Akumulasi Poin"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_riwayat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Riwayat Daur Ulang"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@id/text_sapa"
+            app:layout_constraintTop_toBottomOf="@id/widget_rekap"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

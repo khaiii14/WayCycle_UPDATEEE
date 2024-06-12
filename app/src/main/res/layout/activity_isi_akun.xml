@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".isi_akun">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/header_isiAkun"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:background="@color/light_green"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <ImageButton
+                android:id="@+id/back_button_isiAkun"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/back_white_revv"
+                android:contentDescription="Kembali ke Profile"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="25dp"
+                />
+
+            <TextView
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Akun"
+                android:textColor="@color/white"
+                android:layout_marginTop="44dp"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/back_button_isiAkun"
+                app:layout_constraintStart_toEndOf="@+id/back_button_isiAkun"
+                app:layout_constraintTop_toTopOf="@id/back_button_isiAkun"
+                />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

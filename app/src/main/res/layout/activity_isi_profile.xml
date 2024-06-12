@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".isi_profile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/header_profile"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:background="@color/light_green"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <ImageButton
+                android:id="@+id/back_button_profile"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/back_white_revv"
+                android:contentDescription="Kembali ke Profile"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="25dp"
+                />
+
+            <TextView
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Profil"
+                android:textColor="@color/white"
+                android:layout_marginTop="44dp"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/icon_back_profile"
+                app:layout_constraintStart_toEndOf="@+id/icon_back_profile"
+                app:layout_constraintTop_toTopOf="@id/icon_back_profile"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/foto_profil"
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:src="@drawable/foto_profile"
+            android:layout_marginTop="53dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header_profile"
+            />
+
+        <ImageView
+            android:id="@+id/icon_user_profil"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_user_profile"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foto_profil" />
+
+        <TextView
+            android:id="@+id/nama_pengguna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Nama"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/icon_user_profil"
+            app:layout_constraintTop_toTopOf="@id/icon_user_profil"
+            app:layout_constraintBottom_toBottomOf="@id/icon_user_profil" />
+
+        <EditText
+            android:id="@+id/editTextTextNama_pengguna"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Ketikkan nama lengkap kamu"
+            android:inputType="text"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/icon_user_profil"
+            app:layout_constraintTop_toBottomOf="@id/nama_pengguna"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/edit_nama"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/edit_nama"
+            android:contentDescription="edit nama"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="-10dp"
+            app:layout_constraintEnd_toEndOf="@id/editTextTextNama_pengguna"
+            app:layout_constraintTop_toTopOf="@id/editTextTextNama_pengguna"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

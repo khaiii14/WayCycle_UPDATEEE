@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">WayCycle</string>
     <string name="alamatpnj">Jl. Prof. DR. G.A. Siwabessy, Kukusan, Kecamatan Beji, Kota Depok, Jawa Barat 16425</string>
+    <string name="judul_artikel">HPSN 2021: Gali Potensi Industri Daur Ulang Sampah Dalam Negeri</string>
+    <string name="teks_artikel">
+        Setidaknya begitu yang diutarakan Direktur Pengelolaan Sampah pada Direktorat Jenderal Pengelolaan Limbah, Sampah, dan Bahan Beracun Berbahaya (PSLB3) KLHK, Novrizal Tahar saat berbincang melalui sambungan telepon. Potensi besar ini dia yakini masih belum tereksplorasi dengan baik dan maksimal. Padahal, potensinya bisa menyasar banyak sektor baik itu industri daur ulang plastik, daur ulang kertas, industri pertanian hingga energi.\n\n
+        Keyakinan Novrizal, terbukti oleh data pertumbuhan ekonomi Indonesia dari Badan Pusat Statistik (BPS) di kuartal II-2020 pada masa pandemi Covid-19.Data tersebut mengungkapkan sektor industri Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang mengalami pertumbuhan 4,56 persen. Angka ini lebih besar dari sektor Informasi dan Komunikasi; Jasa Kesehatan dan Kegiatan Sosial; serta Pertanian, Kehutanan, dan Perikanan yang tumbuh sebesar 2,19 persen.\n\n
+        “Ditambah lagi dengan regulasi baru yang KLHK keluarkan yaitu Peraturan Menteri Nomor 75 Tahun 2019 tentang peta jalan pengurangan sampah oleh produsen yang seharusnya bisa mendorong potensi industri daur ulang secara maksimal,” ungkapnya.\n\n
+        Lebih jauh, Novrizal lalu menyoroti daur ulang plastik dan kertas. Kapasitas industri daur ulang kertas saat ini mencapai 7,2 juta ton per tahun. Berdasarkan jumlah ini, industri daur ulang kertas menjadi kontributor terbesar dalam pemenuhan kebutuhan bahan baku industri. Industri daur ulang kertas menyumbang 56 persen dari total produksi kertas nasional yang mencapai 13,59 juta ton/tahun.\n\n
+        Dia menyayangkan sumber bahan baku industri daur ulang kertas masih belum bisa dipasok secara maksimal dari dalam negeri. Bahan baku industri daur ulang kertas tertinggi masih berasal dari scrap impor yaitu sebanyak 50 persen. Sementara itu, kapasitas industri daur ulang plastik mencapai 2 juta ton per tahun. Novrizal mereken nilai ini berkontribusi terhadap 29 persen pemenuhan kebutuhan domestik, yang totalnya mencapai 5,63 juta ton pertahun.\n\n
+        Untuk industri daur ulang plastik, Novrizal mengungkapkan sektor informal masih menjadi tulang punggung pemasok dalam negeri. Besaran peran sektor informal yaitu 80 hingga 84 persen. “Artinya pasokan dalam negeri kita masih belum maksimal,” tambahnya.\n\n
+    </string>
+
+    <string name="kutipan_artikel"><![CDATA[Potensi waste to resource atau pendekatan pengelolaan sampah dengan paradigma sampah menjadi sumber daya melalui pendekatan ekonomi sirkular, menjadi isu utama dalam perayaan Hari Peduli Sampah Nasional (HPSN) 2021. Dengan tema “Sampah Bahan Baku Ekonomi di Masa Pandemi”, Kementerian Lingkungan Hidup dan Kehutanan (KLHK) ingin menunjukkan potensi sampah Tanah Air, khususnya sebagai bahan baku untuk industri daur ulang.]]></string>
 </resources>
