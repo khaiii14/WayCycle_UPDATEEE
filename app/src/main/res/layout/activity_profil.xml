@@ -9,67 +9,163 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="40dp">
+        android:layout_height="wrap_content">
 
         <LinearLayout
+            android:id="@+id/profile_container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="202dp"
+            android:orientation="horizontal"
+            android:background="@drawable/shapeprofil"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
             <ImageView
-                android:id="@+id/header_profile"
-                android:layout_width="match_parent"
-                android:layout_height="202dp"
-                android:src="@drawable/shapeprofil"
-                android:scaleType="centerCrop"
-                />
-            
+                android:id="@+id/profile_picture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/profilepicture"
+                android:layout_marginStart="50dp" />
+
             <LinearLayout
-                android:layout_width="match_parent"
+                android:id="@+id/linear_text"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="-50dp"
-                android:gravity="center_vertical">
+                android:orientation="vertical"
+                android:layout_marginStart="17dp">
 
-                <ImageView
-                    android:id="@+id/profile_picture"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/profilepicture"
-                    android:layout_marginStart="50dp"
-                    />
-
-                <LinearLayout
+                <TextView
+                    android:id="@+id/nama_user"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginStart="17dp">
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="16sp"
+                    android:text="Keysha Hauro S"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="66dp" />
 
-                    <TextView
-                        android:id="@+id/nama_user"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_medium"
-                        android:textSize="16sp"
-                        android:text="Keysha Hauro S"
-                        android:textColor="@color/white"
-                        android:layout_marginTop="17dp"
-                        />
-
-                    <TextView
-                        android:id="@+id/badge"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_medium"
-                        android:textSize="16sp"
-                        android:text="Leader"
-                        android:textColor="@color/white"
-                        android:layout_marginTop="10dp"
-                        />
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="16sp"
+                    android:text="Leader"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp" />
             </LinearLayout>
         </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <ImageView
+            android:id="@+id/ic_akun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconakun"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <Button
+            android:id="@+id/btn_akun"
+            android:layout_width="327dp"
+            android:layout_height="46dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_akun"
+            app:layout_constraintTop_toTopOf="@+id/ic_akun"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/ic_notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconnotif"
+            android:layout_marginTop="26dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_akun"
+            />
+
+        <Button
+            android:id="@+id/btn_notif"
+            android:layout_width="327dp"
+            android:layout_height="46dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_notif"
+            app:layout_constraintTop_toTopOf="@+id/ic_notif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/ic_kontak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconkontak"
+            android:layout_marginTop="26dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_notif"
+            />
+
+        <Button
+            android:id="@+id/btn_kontak"
+            android:layout_width="327dp"
+            android:layout_height="46dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_kontak"
+            app:layout_constraintTop_toTopOf="@+id/ic_kontak"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/ic_panduan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconguidebook"
+            android:layout_marginTop="26dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_kontak"
+            />
+
+        <Button
+            android:id="@+id/btn_panduan"
+            android:layout_width="327dp"
+            android:layout_height="46dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_panduan"
+            app:layout_constraintTop_toTopOf="@+id/ic_panduan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/ic_signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconsignout"
+            android:layout_marginTop="26dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_panduan"
+            />
+
+        <Button
+            android:id="@+id/btn_signout"
+            android:layout_width="327dp"
+            android:layout_height="46dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_signout"
+            app:layout_constraintTop_toTopOf="@+id/ic_signout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
