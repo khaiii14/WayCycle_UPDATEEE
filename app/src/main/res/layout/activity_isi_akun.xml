@@ -5,11 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_white"
     tools:context=".isi_akun">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
         >
 
         <LinearLayout
@@ -50,7 +52,271 @@
                 />
         </LinearLayout>
 
+        <ImageView
+            android:id="@+id/icon_user_profil"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_user_profile"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header_isiAkun" />
 
+        <TextView
+            android:id="@+id/nama_pengguna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Nama"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/icon_user_profil"
+            app:layout_constraintTop_toTopOf="@id/icon_user_profil"
+            app:layout_constraintBottom_toBottomOf="@id/icon_user_profil" />
+
+        <EditText
+            android:id="@+id/editTextTextNama_pengguna"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Keysha Hauro Syuhada"
+            android:inputType=""
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/icon_user_profil"
+            app:layout_constraintTop_toBottomOf="@id/nama_pengguna"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/icon_username"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/username_icon"
+            android:layout_marginTop="76dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/icon_user_profil" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/icon_username"
+            app:layout_constraintTop_toTopOf="@id/icon_username"
+            app:layout_constraintBottom_toBottomOf="@id/icon_username" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Keyshahs"
+            android:inputType="text"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/icon_username"
+            app:layout_constraintTop_toBottomOf="@id/username"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/edit_username"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/edit_nama"
+            android:contentDescription="edit username"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="-10dp"
+            app:layout_constraintEnd_toEndOf="@id/editTextUsername"
+            app:layout_constraintTop_toTopOf="@id/editTextUsername"
+            />
+
+        <ImageView
+            android:id="@+id/icon_email"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/email_icon"
+            android:layout_marginTop="76dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/icon_username" />
+
+        <TextView
+            android:id="@+id/alamatEmail_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="E-mail"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/icon_email"
+            app:layout_constraintTop_toTopOf="@id/icon_email"
+            app:layout_constraintBottom_toBottomOf="@id/icon_email" />
+
+        <EditText
+            android:id="@+id/editTextEmailAddress_Profile"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="pictureskey@gmail.com"
+            android:inputType="textEmailAddress"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/icon_email"
+            app:layout_constraintTop_toBottomOf="@id/alamatEmail_profile"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/edit_email"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/edit_nama"
+            android:contentDescription="edit email"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="-10dp"
+            app:layout_constraintEnd_toEndOf="@id/editTextEmailAddress_Profile"
+            app:layout_constraintTop_toTopOf="@id/editTextEmailAddress_Profile"
+            />
+
+        <ImageView
+            android:id="@+id/icon_phone"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/phone_icon"
+            android:layout_marginTop="76dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/icon_email" />
+
+        <TextView
+            android:id="@+id/nomortelp_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Nomor Telepon"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/icon_phone"
+            app:layout_constraintTop_toTopOf="@id/icon_phone"
+            app:layout_constraintBottom_toBottomOf="@id/icon_phone" />
+
+        <EditText
+            android:id="@+id/editTextPhone_Profile"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="087812345678"
+            android:inputType="phone"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/icon_phone"
+            app:layout_constraintTop_toBottomOf="@id/nomortelp_profile"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/edit_nmrHP"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/edit_nama"
+            android:contentDescription="edit nomor telepon"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="-10dp"
+            app:layout_constraintEnd_toEndOf="@id/editTextPhone_Profile"
+            app:layout_constraintTop_toTopOf="@id/editTextPhone_Profile"
+            />
+
+        <ImageView
+            android:id="@+id/icon_katasandi"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/password_icon"
+            android:layout_marginTop="76dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/icon_phone" />
+
+        <TextView
+            android:id="@+id/katasandi_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Kata Sandi"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/icon_katasandi"
+            app:layout_constraintTop_toTopOf="@id/icon_katasandi"
+            app:layout_constraintBottom_toBottomOf="@id/icon_katasandi" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword_Profile"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="KeyshaHauro"
+            android:inputType="textPassword"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/icon_katasandi"
+            app:layout_constraintTop_toBottomOf="@id/katasandi_profile"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/edit_katasandi"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/edit_nama"
+            android:contentDescription="edit kata sandi"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="-10dp"
+            app:layout_constraintEnd_toEndOf="@id/editTextTextPassword_Profile"
+            app:layout_constraintTop_toTopOf="@id/editTextTextPassword_Profile"
+            />
+
+        <ImageView
+            android:id="@+id/icon_removeAcc"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/hapusakun_icon"
+            android:layout_marginTop="76dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/icon_katasandi" />
+
+        <Button
+            android:id="@+id/hapusAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Hapus Akun"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:backgroundTint="@color/bg_white"
+            app:layout_constraintStart_toEndOf="@id/icon_removeAcc"
+            app:layout_constraintTop_toTopOf="@id/icon_removeAcc"
+            app:layout_constraintBottom_toBottomOf="@id/icon_removeAcc"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

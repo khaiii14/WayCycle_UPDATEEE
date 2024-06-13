@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    tools:context=".angkut_dropOff">
+
+        <ImageButton
+            android:id="@+id/back_button_Angkut2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/back_button_black"
+            android:contentDescription="Kembali ke Profile"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/satria_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Satria sudah didepan!"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/back_button_Angkut2"
+            />
+
+        <ImageView
+            android:id="@+id/icon_satria"
+            android:layout_width="151dp"
+            android:layout_height="130dp"
+            android:src="@drawable/satria_baru"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="-20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/satria_activity"
+            />
+
+        <TextView
+            android:id="@+id/status_satria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Status Satria"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/icon_satria"
+            />
+
+        <ImageView
+            android:id="@+id/lines"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/lines"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/status_satria"
+            android:alpha="0.5"
+            />
+
+        <ImageView
+            android:id="@+id/icon_jemput"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/icon_jemput"
+            android:layout_marginStart="21dp"
+            app:layout_constraintStart_toEndOf="@id/lines"
+            app:layout_constraintTop_toTopOf="@id/lines"
+            app:layout_constraintTop_toBottomOf="@id/status_satria"
+            android:alpha="0.5"
+            />
+
+        <TextView
+            android:id="@+id/satria_otw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:text="Satria OTW ke tempat kamu yaa!"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="33dp"
+            app:layout_constraintStart_toEndOf="@id/lines"
+            app:layout_constraintTop_toTopOf="@id/lines"
+            app:layout_constraintTop_toBottomOf="@id/icon_jemput"
+            android:alpha="0.5"
+            />
+
+        <ImageView
+            android:id="@+id/lines2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/lines"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lines"
+            android:alpha="0.5"
+            />
+
+        <ImageView
+            android:id="@+id/icon_sampai"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/paket"
+            android:layout_marginStart="21dp"
+            app:layout_constraintStart_toEndOf="@id/lines2"
+            app:layout_constraintTop_toTopOf="@id/lines2"
+            app:layout_constraintTop_toBottomOf="@id/satria_otw"
+            android:alpha="0.5"
+            />
+
+        <TextView
+            android:id="@+id/satria_paket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:text="Sampah kamu sudah dijemput Satria"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="33dp"
+            app:layout_constraintStart_toEndOf="@id/lines2"
+            app:layout_constraintTop_toTopOf="@id/lines2"
+            app:layout_constraintTop_toBottomOf="@id/icon_sampai"
+            android:alpha="0.5"
+            />
+
+        <ImageView
+            android:id="@+id/lines3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/lines"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/satria_paket"
+            />
+
+        <ImageView
+            android:id="@+id/icon_paket_diterima"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/paket_diterima"
+            android:layout_marginStart="21dp"
+            app:layout_constraintStart_toEndOf="@id/lines3"
+            app:layout_constraintTop_toTopOf="@id/lines3"
+            app:layout_constraintTop_toBottomOf="@id/satria_paket"
+            />
+
+        <TextView
+            android:id="@+id/diangkut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:text="Sampah kamu sudah sampai di Bank Sampah"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="33dp"
+            app:layout_constraintStart_toEndOf="@id/lines3"
+            app:layout_constraintTop_toTopOf="@id/lines3"
+            app:layout_constraintTop_toBottomOf="@id/icon_paket_diterima"
+            />
+
+        <Button
+            android:id="@+id/btn_selesai_Angkut"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="100dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Selesai"
+            android:backgroundTint="@color/light_green"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/diangkut"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

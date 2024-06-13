@@ -13,6 +13,15 @@
         android:theme="@style/Theme.WayCycle"
         tools:targetApi="31">
         <activity
+            android:name=".angkut_dropOff"
+            android:exported="false" />
+        <activity
+            android:name=".angkut_sampai"
+            android:exported="false" />
+        <activity
+            android:name=".angkut_pickup"
+            android:exported="false" />
+        <activity
             android:name=".isi_akun"
             android:exported="false" />
         <activity
