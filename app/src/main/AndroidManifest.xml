@@ -13,6 +13,9 @@
         android:theme="@style/Theme.WayCycle"
         tools:targetApi="31">
         <activity
+            android:name=".starcycle_1"
+            android:exported="false" />
+        <activity
             android:name=".angkut_dropOff"
             android:exported="false" />
         <activity
