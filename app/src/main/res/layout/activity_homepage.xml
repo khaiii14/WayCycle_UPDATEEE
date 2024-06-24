@@ -63,6 +63,15 @@
             app:layout_constraintTop_toBottomOf="@id/header_cover"
             />
 
+        <Button
+            android:id="@+id/btn_widget_waypoints"
+            android:layout_width="131dp"
+            android:layout_height="121dp"
+            android:alpha="0"
+            app:layout_constraintTop_toTopOf="@id/waypoints_widget"
+            app:layout_constraintStart_toStartOf="@id/waypoints_widget"
+            />
+
         <ImageView
             android:id="@+id/starcyle_widget"
             android:layout_width="131dp"
@@ -73,6 +82,16 @@
             app:layout_constraintStart_toEndOf="@id/waypoints_widget"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/header_cover"
+            />
+
+        <Button
+            android:id="@+id/btn_widget_starcycle"
+            android:layout_width="131dp"
+            android:layout_height="121dp"
+            android:alpha="0"
+            app:layout_constraintTop_toTopOf="@id/starcyle_widget"
+            app:layout_constraintStart_toStartOf="@id/starcyle_widget"
+            android:layout_marginStart="-1dp"
             />
 
         <ImageView
@@ -167,6 +186,15 @@
             app:layout_constraintTop_toBottomOf="@id/artikell"
             />
 
+        <Button
+            android:id="@+id/btn_artikel1"
+            android:layout_width="361dp"
+            android:layout_height="135dp"
+            android:alpha="0"
+            app:layout_constraintTop_toTopOf="@id/artikel_1"
+            app:layout_constraintStart_toStartOf="@id/artikel_1"
+            />
+
         <ImageView
             android:id="@+id/artikel_2"
             android:layout_width="361dp"
@@ -177,6 +205,15 @@
             app:layout_constraintTop_toBottomOf="@id/artikel_1"
             />
 
+        <Button
+            android:id="@+id/btn_artikel2"
+            android:layout_width="361dp"
+            android:layout_height="135dp"
+            android:alpha="0"
+            app:layout_constraintTop_toTopOf="@id/artikel_2"
+            app:layout_constraintStart_toStartOf="@id/artikel_2"
+            />
+
         <ImageView
             android:id="@+id/artikel_3"
             android:layout_width="361dp"
@@ -185,6 +222,15 @@
             android:layout_marginTop="29dp"
             app:layout_constraintStart_toStartOf="@+id/artikel_2"
             app:layout_constraintTop_toBottomOf="@id/artikel_2"
+            />
+
+        <Button
+            android:id="@+id/btn_artikel3"
+            android:layout_width="361dp"
+            android:layout_height="135dp"
+            android:alpha="0"
+            app:layout_constraintTop_toTopOf="@id/artikel_3"
+            app:layout_constraintStart_toStartOf="@id/artikel_3"
             />
 
 

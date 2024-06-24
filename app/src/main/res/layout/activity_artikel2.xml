@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".artikel_2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_back_artikel2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/iconback"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/btn_back_arikel2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:alpha="0"
+            android:layout_gravity="start"
+            android:layout_marginTop="-48dp"
+            android:layout_marginStart="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_back_artikel2"
+            app:layout_constraintTop_toTopOf="@+id/icon_back_artikel2"
+            app:layout_constraintStart_toStartOf="@id/icon_back_artikel2"
+            app:layout_constraintEnd_toEndOf="@id/icon_back_artikel2"/>
+
+        <TextView
+            android:id="@+id/artikel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Artikel"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/icon_back_artikel2"
+            app:layout_constraintTop_toTopOf="@id/icon_back_artikel2"
+            app:layout_constraintStart_toStartOf="@id/icon_back_artikel2"
+            app:layout_constraintStart_toEndOf="@+id/icon_back_artikel2"/>
+
+        <TextView
+            android:id="@+id/judul_artikel2"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="@string/judul_artikel2"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/artikel2"/>
+
+        <TextView
+            android:id="@+id/tanggal_artikel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:text="21 Desember 2022"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/judul_artikel2"/>
+
+        <TextView
+            android:id="@+id/kutipan2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:text="@string/kutipan_artikel2"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/judul_artikel2"/>
+
+        <ImageView
+            android:id="@+id/gambar_artikel2"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            android:src="@drawable/gambar_artikel2"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/kutipan2"/>
+
+        <TextView
+            android:id="@+id/teks_artikel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            android:text="@string/teks_artikel2"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gambar_artikel2"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

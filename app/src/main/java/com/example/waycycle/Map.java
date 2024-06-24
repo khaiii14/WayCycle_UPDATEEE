@@ -29,7 +29,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
         gMap = googleMap;
 
         // Contoh menambahkan marker di lokasi tertentu dan memindahkan kamera ke lokasi tersebut
-        LatLng lokasi = new LatLng(-6.3706482426187065, 106.82369205442816); // Koordinat Jakarta, Indonesia
+        LatLng lokasi = new LatLng(-6.3706482426187065, 106.82369205442816); // Koordinat PNJ
         gMap.addMarker(new MarkerOptions().position(lokasi).title("Politeknik Negeri Jakarta"));
         float zoomLevel = 20f;
         gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lokasi, zoomLevel));
